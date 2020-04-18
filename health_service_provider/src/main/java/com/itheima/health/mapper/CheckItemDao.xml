@@ -5,4 +5,20 @@
         INSERT INTO t_checkitem(code, name, sex, age, price, type, attention, remark)
         VALUE (#{code},#{name},#{sex},#{age},#{price},#{type},#{attention},#{remark})
     </insert>
+
+    <select id="selectByCondition" resultType="com.itheima.health.pojo.CheckItem" parameterType="CheckItem">
+        SELECT * FROM t_checkitem
+        <if test="queryString != null and queryString.length > 0">
+            WHERE code like CONCAT('%',#{queryString},'%') or name like CONCAT('%',#{queryString},'%')
+        </if>
+    </select>
+
+    <select id="countCheckItemsById" resultType="java.lang.Long" parameterType="integer">
+        SELECT COUNT(*) FROM t_checkgroup_checkitem
+        WHERE checkitem_id = #{checkItemId}
+    </select>
+    
+    <delete id="deleteCheckItemById" parameterType="integer">
+        DELETE FROM t_checkitem WHERE id = #{checkItemId}
+    </delete>
 </mapper>

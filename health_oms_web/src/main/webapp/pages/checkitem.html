@@ -208,6 +208,7 @@
         var vue = new Vue({
             el: '#app',
             data:{
+                backend_url:"http://localhost:9002",
                 pagination: {//分页相关模型数据
 					  currentPage: 1,//当前页码
 					  pageSize:10,//每页显示的记录数
@@ -225,6 +226,7 @@
             },
             //钩子函数，VUE对象初始化完成后自动执行
             created() {
+                this.findPage();
             },
             methods: {
                 //编辑
@@ -236,7 +238,7 @@
                         if (Valid){
                             console.log("验证成功");
                             console.log(this.formData);
-                            axios.post("http://localhost:9002/checkitem/add.do",this.formData).then((response)=>{
+                            axios.post(backend_url+"/checkitem/add.do",this.formData).then((response)=>{
                                 this.dialogFormVisible = false;
                                 if (response.data.flag) {
                                     console.log("1111111111111111");
@@ -261,6 +263,21 @@
                 },
                 //分页查询
                 findPage() {
+                    if (this.pagination.queryString !=null && this.pagination.queryString.length>0){
+                        this.pagination.currentPage = 1;
+                    };
+                    var params={
+                        currentPage:this.pagination.currentPage,
+                        pageSize:this.pagination.pageSize,
+                        queryString: this.pagination.queryString
+                    };
+
+                    console.log(params);
+
+                    axios.post(this.backend_url+"/checkitem/findPage.do",params).then((response)=>{
+                        this.dataList = response.data.rows;
+                        this.pagination.total = response.data.total;
+                    });
                 },
                 // 重置表单
                 resetForm(formName) {
@@ -281,9 +298,25 @@
                 },
                 //切换页码
                 handleCurrentChange(currentPage) {
+                    this.pagination.currentPage = currentPage;
+                    this.findPage();
                 },
                 // 删除
                 handleDelete(row) {
+                    this.$confirm("确定要删除当前选中记录吗？","提示",{type: 'warning'}).then(()=>{
+                       //alert('用户点击的是确定按钮'+row.id);
+                        axios.post(this.backend_url+"/checkitem/delete.do?id="+row.id).then((response)=>{
+                            if (response.data.flag){
+                                this.$message({
+                                   message:response.data.message,
+                                   type:'success'
+                                });
+                                this.findPage();
+                            }else {
+                                this.$message.error(response.data.message);
+                            }
+                        });
+                    });
                 }
             }
         })

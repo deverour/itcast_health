@@ -1,5 +1,7 @@
 package com.itheima.health.entity;
 
+import lombok.ToString;
+
 import java.io.Serializable;
 
 /**
@@ -8,6 +10,8 @@ import java.io.Serializable;
  * @description ：查询条件实体类
  * @version: 1.0
  */
+
+@ToString
 public class QueryPageBean implements Serializable {
 	private Integer currentPage;//页码
 	private Integer pageSize;//每页记录数
