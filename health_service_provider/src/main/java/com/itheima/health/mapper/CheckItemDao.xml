@@ -21,4 +21,9 @@
     <delete id="deleteCheckItemById" parameterType="integer">
         DELETE FROM t_checkitem WHERE id = #{checkItemId}
     </delete>
+
+    <select id="findById" resultType="com.itheima.health.pojo.CheckItem" parameterType="integer">
+        SELECT * FROM  t_checkitem
+        WHERE id = #{id}
+    </select>
 </mapper>

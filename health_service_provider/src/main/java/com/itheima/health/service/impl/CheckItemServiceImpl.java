@@ -38,12 +38,18 @@ public class CheckItemServiceImpl implements CheckItemService {
 
     @Override
     public void deleteById(Integer id) {
-        System.out.println("1111111111111111111111111");
+
         log.debug("deleteById:{}",id);
         Long count = checkItemDao.countCheckItemsById(id);
         if (count > 0) {
             throw new RuntimeException("有关联数据，不能删除");
         }
         checkItemDao.deleteCheckItemById(id);
+    }
+
+    @Override
+    public CheckItem findById(Integer id) {
+        log.debug("id:{}",id);
+        return checkItemDao.findById(id);
     }
 }

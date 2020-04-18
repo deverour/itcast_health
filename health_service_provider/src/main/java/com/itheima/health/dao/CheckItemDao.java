@@ -14,4 +14,6 @@ public interface  CheckItemDao {
     Long countCheckItemsById(@Param("checkItemId") Integer checkItemId);
 
     void deleteCheckItemById(@Param("checkItemId") Integer checkItemId);
+
+    CheckItem findById(@Param("id") Integer id);
 }
