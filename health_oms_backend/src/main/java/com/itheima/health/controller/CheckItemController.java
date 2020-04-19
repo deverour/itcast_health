@@ -80,4 +80,17 @@ public class CheckItemController {
 
     }
 
+    @RequestMapping("/edit")
+    public Result edit(@RequestBody CheckItem checkItem){
+        try {
+            log.debug("checkItem:{}",checkItem);
+            checkItemService.edit(checkItem);
+            return new Result(true,MessageConst.EDIT_CHECKITEM_SUCCESS);
+
+        }catch (Exception e){
+            e.printStackTrace();
+            return new Result(false,MessageConst.EDIT_CHECKITEM_FAIL);
+        }
+    }
+
 }

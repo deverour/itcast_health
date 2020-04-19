@@ -7,7 +7,7 @@
       <root url="jar://$PROJECT_DIR$/../../Maven/repository/com/github/jsqlparser/jsqlparser/1.0/jsqlparser-1.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../maven/repository/com/github/jsqlparser/jsqlparser/1.0/jsqlparser-1.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Maven/repository/com/github/jsqlparser/jsqlparser/1.0/jsqlparser-1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

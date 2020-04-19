@@ -6,6 +6,13 @@
         VALUE (#{code},#{name},#{sex},#{age},#{price},#{type},#{attention},#{remark})
     </insert>
 
+    <update id="edit" parameterType="CheckItem">
+        UPDATE t_checkitem
+        set code=#{code},name=#{name},sex=#{sex},age=#{age},price=#{price},type=#{type},attention=#{attention},remark=#{remark}
+        WHERE id = #{id}
+
+    </update>
+
     <select id="selectByCondition" resultType="com.itheima.health.pojo.CheckItem" parameterType="CheckItem">
         SELECT * FROM t_checkitem
         <if test="queryString != null and queryString.length > 0">

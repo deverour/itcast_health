@@ -10,6 +10,7 @@ import com.itheima.health.pojo.CheckItem;
 import com.itheima.health.service.CheckItemService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 
@@ -20,7 +21,9 @@ public class CheckItemServiceImpl implements CheckItemService {
 
     @Autowired
     private CheckItemDao checkItemDao ;
+
     @Override
+    @Transactional
     public void add(CheckItem checkItem) {
         log.debug("CheckItemServiceImpl checkitem:{}",checkItem);
         checkItemDao.add(checkItem);
@@ -36,6 +39,7 @@ public class CheckItemServiceImpl implements CheckItemService {
         return new PageResult(pageData.getTotal(),pageData.getResult());
     }
 
+    @Transactional
     @Override
     public void deleteById(Integer id) {
 
@@ -52,4 +56,12 @@ public class CheckItemServiceImpl implements CheckItemService {
         log.debug("id:{}",id);
         return checkItemDao.findById(id);
     }
+    @Transactional
+    @Override
+    public void edit(CheckItem checkItem) {
+        log.debug("checkItem:{}",checkItem);
+        checkItemDao.edit(checkItem);
+    }
+
+
 }

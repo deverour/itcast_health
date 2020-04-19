@@ -231,17 +231,37 @@
             methods: {
                 //编辑
                 handleEdit() {
+                    console.log(this.formData);
+                     this.$refs['dataEditForm'].validate((valid)=>{
+                         if (valid){
+                             console.log("表单验证成功");
+                              axios.post(this.backend_url+"/checkitem/edit.do",this.formData).then((response)=>{
+                                  if (response.data.flag){
+                                      this.$message({
+                                          message:response.data.message,
+                                          type:'success'
+                                      });
+                                  }else {
+                                      this.$message.error(response.data.message);
+                                  }
+                              }).finally(()=>{
+                                  this.dialogFormVisible4Edit = false;
+                                  this.findPage();
+                              });
+                         }else {
+                             this.$message.error("表单验证失败");
+                         }
+                     })
                 },
                 //添加
                 handleAdd () {
-                    this.$refs['dataAddForm'].validate((Valid)=>{
-                        if (Valid){
+                    this.$refs['dataAddForm'].validate((valid)=>{
+                        if (valid){
                             console.log("验证成功");
                             console.log(this.formData);
-                            axios.post(backend_url+"/checkitem/add.do",this.formData).then((response)=>{
+                            axios.post(this.backend_url+"/checkitem/add.do",this.formData).then((response)=>{
                                 this.dialogFormVisible = false;
                                 if (response.data.flag) {
-                                    console.log("1111111111111111");
                                     this.$message({
                                         message: response.data.message,
                                         type: 'success'
