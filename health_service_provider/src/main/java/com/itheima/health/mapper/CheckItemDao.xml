@@ -13,7 +13,7 @@
 
     </update>
 
-    <select id="selectByCondition" resultType="com.itheima.health.pojo.CheckItem" parameterType="CheckItem">
+    <select id="selectByCondition" resultType="com.itheima.health.pojo.CheckItem" parameterType="string">
         SELECT * FROM t_checkitem
         <if test="queryString != null and queryString.length > 0">
             WHERE code like CONCAT('%',#{queryString},'%') or name like CONCAT('%',#{queryString},'%')

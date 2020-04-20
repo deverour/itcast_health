@@ -4,21 +4,15 @@
     <list default="true" id="a5376521-13fc-4f78-aad3-c72858d94216" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_5_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_interface/src/main/java/com/itheima/health/service/CheckGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/health_interface/src/main/java/com/itheima/health/service/CheckGroupService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/health_interface/src/main/java/com/itheima/health/service/CheckItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/health_interface/src/main/java/com/itheima/health/service/CheckItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health_oms_backend/src/main/java/com/itheima/health/controller/CheckItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/health_oms_backend/src/main/java/com/itheima/health/controller/CheckItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health_oms_web/src/main/webapp/pages/checkitem.html" beforeDir="false" afterPath="$PROJECT_DIR$/health_oms_web/src/main/webapp/pages/checkitem.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health_service_provider/src/main/java/com/itheima/health/dao/CheckItemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/health_service_provider/src/main/java/com/itheima/health/dao/CheckItemDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_oms_backend/src/main/java/com/itheima/health/controller/CheckGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/health_oms_backend/src/main/java/com/itheima/health/controller/CheckGroupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_oms_web/src/main/webapp/pages/checkgroup.html" beforeDir="false" afterPath="$PROJECT_DIR$/health_oms_web/src/main/webapp/pages/checkgroup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_service_provider/src/main/java/com/itheima/health/dao/CheckGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/health_service_provider/src/main/java/com/itheima/health/dao/CheckGroupDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_service_provider/src/main/java/com/itheima/health/mapper/CheckGroupDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/health_service_provider/src/main/java/com/itheima/health/mapper/CheckGroupDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/health_service_provider/src/main/java/com/itheima/health/mapper/CheckItemDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/health_service_provider/src/main/java/com/itheima/health/mapper/CheckItemDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health_service_provider/src/main/java/com/itheima/health/service/impl/CheckItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/health_service_provider/src/main/java/com/itheima/health/service/impl/CheckItemServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health_service_provider/src/main/resources/dataSource.properties" beforeDir="false" afterPath="$PROJECT_DIR$/health_service_provider/src/main/resources/dataSource.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_service_provider/src/main/java/com/itheima/health/service/impl/CheckGroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/health_service_provider/src/main/java/com/itheima/health/service/impl/CheckGroupServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,21 +33,31 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL for 5.1 - itcast_health@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="itcast_health@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL for 5.1 - itcast_health@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="itcast_health@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL for 5.1 - itcast_health@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="itcast_health@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="itcast_health: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="itcast_health@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="itcast_health: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="t_checkitem: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="itcast_health" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -228,6 +232,7 @@
       <workItem from="1587225513922" duration="1522000" />
       <workItem from="1587305952542" duration="1533000" />
       <workItem from="1587307508792" duration="3390000" />
+      <workItem from="1587385867379" duration="11149000" />
     </task>
     <task id="LOCAL-00001" summary="v0.1">
       <created>1587150112726</created>
@@ -289,16 +294,16 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="121" y="0" key="#Project_Structure/0.0.1280.689@0.0.1280.689" timestamp="1587142929097" />
-    <state x="519" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587307705378">
+    <state x="1237" y="481" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587393267429">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="2212" y="113" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.0.1440.870@1920.0.1440.870" timestamp="1587202263069" />
-    <state x="519" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1587307705378" />
-    <state x="1020" y="333" key="#com.intellij.ide.util.MemberChooser" timestamp="1587308694447">
+    <state x="1237" y="481" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1587393267429" />
+    <state x="1020" y="333" key="#com.intellij.ide.util.MemberChooser" timestamp="1587397403043">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="765" y="248" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1587226008087" />
-    <state x="1020" y="333" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1410@0.0.2560.1410" timestamp="1587308694447" />
+    <state x="1020" y="333" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1410@0.0.2560.1410" timestamp="1587397403043" />
     <state x="487" y="52" key="CommitChangelistDialog2" timestamp="1587310903092">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
@@ -310,43 +315,43 @@
     </state>
     <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1587142927310" />
     <state x="505" y="121" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1587149935428" />
-    <state width="2517" height="526" key="GridCell.Tab.0.bottom" timestamp="1587310869210">
+    <state width="1529" height="479" key="GridCell.Tab.0.bottom" timestamp="1587398376731">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1587143564638" />
     <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1587145249171" />
     <state width="1493" height="272" key="GridCell.Tab.0.bottom/0.0.1536.840@0.0.1536.840" timestamp="1587136076984" />
     <state width="1877" height="202" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1587227137373" />
-    <state width="2517" height="526" key="GridCell.Tab.0.bottom/0.0.2560.1410@0.0.2560.1410" timestamp="1587310869210" />
-    <state width="2517" height="526" key="GridCell.Tab.0.center" timestamp="1587310869210">
+    <state width="1529" height="479" key="GridCell.Tab.0.bottom/0.0.2560.1410@0.0.2560.1410" timestamp="1587398376731" />
+    <state width="1529" height="479" key="GridCell.Tab.0.center" timestamp="1587398376731">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1587143564638" />
     <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1587145249171" />
     <state width="1493" height="272" key="GridCell.Tab.0.center/0.0.1536.840@0.0.1536.840" timestamp="1587136076983" />
     <state width="1877" height="202" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1587227137372" />
-    <state width="2517" height="526" key="GridCell.Tab.0.center/0.0.2560.1410@0.0.2560.1410" timestamp="1587310869210" />
-    <state width="2517" height="526" key="GridCell.Tab.0.left" timestamp="1587310869210">
+    <state width="1529" height="479" key="GridCell.Tab.0.center/0.0.2560.1410@0.0.2560.1410" timestamp="1587398376731" />
+    <state width="1529" height="479" key="GridCell.Tab.0.left" timestamp="1587398376731">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1587143564638" />
     <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1587145249171" />
     <state width="1493" height="272" key="GridCell.Tab.0.left/0.0.1536.840@0.0.1536.840" timestamp="1587136076983" />
     <state width="1877" height="202" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1587227137372" />
-    <state width="2517" height="526" key="GridCell.Tab.0.left/0.0.2560.1410@0.0.2560.1410" timestamp="1587310869210" />
-    <state width="2517" height="526" key="GridCell.Tab.0.right" timestamp="1587310869210">
+    <state width="1529" height="479" key="GridCell.Tab.0.left/0.0.2560.1410@0.0.2560.1410" timestamp="1587398376731" />
+    <state width="1529" height="479" key="GridCell.Tab.0.right" timestamp="1587398376731">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1587143564638" />
     <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1587145249171" />
     <state width="1493" height="272" key="GridCell.Tab.0.right/0.0.1536.840@0.0.1536.840" timestamp="1587136076984" />
     <state width="1877" height="202" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1587227137373" />
-    <state width="2517" height="526" key="GridCell.Tab.0.right/0.0.2560.1410@0.0.2560.1410" timestamp="1587310869210" />
+    <state width="1529" height="479" key="GridCell.Tab.0.right/0.0.2560.1410@0.0.2560.1410" timestamp="1587398376731" />
     <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1587201614321">
       <screen x="1920" y="0" width="1440" height="870" />
     </state>
     <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1920.1050/1920.0.1440.870@1920.0.1440.870" timestamp="1587201614321" />
-    <state x="1280" y="359" key="SettingsEditor" timestamp="1587307492080">
+    <state x="1280" y="359" key="SettingsEditor" timestamp="1587389235032">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="226" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1587143245676" />
@@ -354,7 +359,7 @@
     <state x="271" y="55" key="SettingsEditor/0.0.1536.840@0.0.1536.840" timestamp="1587134897439" />
     <state x="339" y="69" key="SettingsEditor/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1587221917717" />
     <state x="2174" y="57" key="SettingsEditor/0.0.1920.1050/1920.0.1440.870@1920.0.1440.870" timestamp="1587203599259" />
-    <state x="1280" y="359" key="SettingsEditor/0.0.2560.1410@0.0.2560.1410" timestamp="1587307492080" />
+    <state x="1280" y="359" key="SettingsEditor/0.0.2560.1410@0.0.2560.1410" timestamp="1587389235032" />
     <state x="451" y="189" key="Vcs.Push.Dialog.v2" timestamp="1587224911150">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

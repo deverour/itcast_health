@@ -322,7 +322,7 @@
                  * 4. 在回调中赋值
                  */
                 findPage() {
-                   /* // 判断是否有查询条件
+                   // 判断是否有查询条件
                     if(this.pagination.queryString != null && this.pagination.queryString.length > 0 ){
                         this.pagination.currentPage = 1;
                     }
@@ -340,7 +340,7 @@
                         this.pagination.total  = response.data.total;
                         this.dataList = response.data.rows;
                     });
-*/
+
                 },
                 // 重置表单
                 resetForm() {
@@ -375,6 +375,7 @@
                                     this.tableData = response.data.data;
                                     // 获取选中的检查项ID列表
                                     axios.get(this.backend_url+"/checkgroup/findCheckItemIdsByCheckGroupId.do?id="+row.id).then((response)=>{
+
                                         this.checkitemIds = response.data.data;
                                     });
                                 }else{

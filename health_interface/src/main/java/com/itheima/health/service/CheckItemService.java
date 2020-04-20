@@ -18,4 +18,6 @@ public interface CheckItemService {
     void edit(CheckItem checkItem);
 
     List<CheckItem> fingAll();
+
+
 }
