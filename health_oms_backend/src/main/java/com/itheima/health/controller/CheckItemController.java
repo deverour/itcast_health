@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Slf4j
 @RestController
@@ -28,7 +29,7 @@ public class CheckItemController {
 
     @RequestMapping("/add")
     public Result add(@RequestBody CheckItem checkItem){
-        System.out.println("start!!!!!!!!!!!!!!!!!!!!!!!!");
+
         try{
             log.debug("CheckItemController checkItem:{}",checkItem);
             checkItemService.add(checkItem);
@@ -90,6 +91,17 @@ public class CheckItemController {
         }catch (Exception e){
             e.printStackTrace();
             return new Result(false,MessageConst.EDIT_CHECKITEM_FAIL);
+        }
+    }
+
+    @RequestMapping("/findAll")
+    public Result findAll(){
+        try {
+            List<CheckItem> list = checkItemService.fingAll();
+            return new Result(true,MessageConst.QUERY_CHECKGROUP_SUCCESS,list);
+        }catch (Exception e){
+            return new Result(false,MessageConst.QUERY_CHECKGROUP_FAIL);
+
         }
     }
 

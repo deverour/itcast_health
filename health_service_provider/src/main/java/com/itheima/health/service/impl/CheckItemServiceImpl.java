@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 @Service
@@ -56,11 +57,17 @@ public class CheckItemServiceImpl implements CheckItemService {
         log.debug("id:{}",id);
         return checkItemDao.findById(id);
     }
+
     @Transactional
     @Override
     public void edit(CheckItem checkItem) {
         log.debug("checkItem:{}",checkItem);
         checkItemDao.edit(checkItem);
+    }
+
+    @Override
+    public List<CheckItem> fingAll() {
+        return checkItemDao.findAll();
     }
 
 
