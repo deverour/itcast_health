@@ -2,6 +2,8 @@ package com.itheima.health.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.itheima.health.common.MessageConst;
+import com.itheima.health.entity.PageResult;
+import com.itheima.health.entity.QueryPageBean;
 import com.itheima.health.entity.Result;
 import com.itheima.health.pojo.Setmeal;
 import com.itheima.health.service.SetmealService;
@@ -64,12 +66,21 @@ public class SetmealController {
             String saveName = setmeal.getImg().replace(QiniuUtils.qiniu_img_url_pre,"");
             setmeal.setImg(saveName);
             setmealService.add(setmeal,checkGroupIds);
-            log.debug(">>>>>>>>img url:{}",setmeal.getImg());
+            log.debug(">>>>>>>>img url:{} >>>>>>>>>>>>setmeal:{}" ,setmeal.getImg(),setmeal);
             return new Result(true,MessageConst.ADD_SETMEAL_SUCCESS);
         }catch(Exception e){
             e.printStackTrace();
             return new Result(false,MessageConst.ADD_SETMEAL_FAIL);
         }
+    }
+
+    @RequestMapping("/findPage")
+    public PageResult findPage(@RequestBody QueryPageBean queryPageBean){
+        PageResult pageResult = setmealService.pageQuery(
+                queryPageBean.getCurrentPage(),
+                queryPageBean.getPageSize(),
+                queryPageBean.getQueryString());
+        return pageResult;
     }
 
 

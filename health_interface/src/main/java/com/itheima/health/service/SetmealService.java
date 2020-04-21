@@ -18,5 +18,7 @@ public interface SetmealService {
      */
     void add(Setmeal setmeal,Integer[] checkGroupIds);
 
+    PageResult pageQuery(Integer currentPage,Integer pageSize,String queryString);
+
 
 }
