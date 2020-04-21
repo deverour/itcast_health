@@ -36,6 +36,9 @@
         SELECT checkitem_id FROM t_checkgroup_checkitem
         WHERE checkgroup_id = #{id}
     </select>
+    <select id="findAll" resultType="com.itheima.health.pojo.CheckGroup">
+        SELECT * FROM t_checkgroup
+    </select>
 
     <update id="edit" parameterType="CheckGroup" >
         UPDATE t_checkgroup

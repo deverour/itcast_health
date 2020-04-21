@@ -9,6 +9,8 @@ import java.util.Map;
 
 public interface CheckGroupDao {
 
+
+
     void add(CheckGroup checkGroup);
 
     void edit(CheckGroup checkGroup);
@@ -22,4 +24,8 @@ public interface CheckGroupDao {
     CheckGroup findById(Integer id);
 
     List<Integer> findCheckItemIdsByCheckGroupId(@Param("id") Integer id);
+
+    List<CheckGroup> findAll();
+
+
 }
