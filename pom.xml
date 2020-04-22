@@ -43,6 +43,7 @@
         <slf4j.version>1.7.25</slf4j.version>
         <lombok.version>1.18.8</lombok.version>
         <qiniu-java-sdk.version>7.2.0</qiniu-java-sdk.version>
+        <poi.version>3.14</poi.version>
     </properties>
 
     <dependencyManagement>
@@ -212,12 +213,12 @@
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi</artifactId>
-                <version>3.14</version>
+                <version>${poi.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi-ooxml</artifactId>
-                <version>3.14</version>
+                <version>${poi.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

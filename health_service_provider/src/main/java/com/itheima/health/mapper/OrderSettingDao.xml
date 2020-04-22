@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.itheima.health.dao.OrderSettingDao">
+    <insert id="add" parameterType="OrderSetting">
+        INSERT INTO t_ordersetting (orderDate,number,reservations)
+        VALUES(#{orderDate},#{number},#{reservations})
+    </insert>
+
+    <update id="update" parameterType="OrderSetting">
+        UPDATE t_ordersetting
+        SET number=#{number},reservations=#{reservations}
+        WHERE orderDate=#{orderDate}
+
+    </update>
+
+    <select id="countByOrderDate" resultType="java.lang.Long" parameterType="date">
+        SELECT count(*) FROM t_ordersetting  WHERE orderDate = #{date}
+
+    </select>
+</mapper>
