@@ -10,4 +10,6 @@ public interface OrderSettingService {
     void add(List<OrderSetting> orderSettingList);
 
     List<Map> getOrderSettingByMonth(String date);
+
+    void editOrderSettingByDate(OrderSetting orderSetting);
 }

@@ -38,12 +38,29 @@ public class OrderSettingServiceImpl implements OrderSettingService {
     public List<Map> getOrderSettingByMonth(String date) {
         log.debug("getOrderSettingByMonth data:{}",date);
         List<Map> listMap = new ArrayList<>();
-        Map m = new HashMap();
-        m.put("date",19);
-        m.put("number",100);
-        m.put("reservations",10);
-        listMap.add(m);
+        String beginDate = date + "-1";
+        String endDate = date+ "-31";
+        List<OrderSetting> orderSettingList = orderSettingDao.getOrderSettingByMonth(beginDate,endDate);
+        for (OrderSetting orderSetting:orderSettingList){
+            Map m = new HashMap();
+            m.put("date",orderSetting.getOrderDate().getDate());
+            m.put("number",orderSetting.getNumber());
+            m.put("reservations",orderSetting.getReservations());
+            listMap.add(m);
+        }
+
 
         return listMap;
+    }
+
+    @Override
+    public void editOrderSettingByDate(OrderSetting orderSetting) {
+        log.debug(">>>>>orderSetting:{}",orderSetting);
+        Long count =  orderSettingDao.countByOrderDate(orderSetting.getOrderDate());
+        if (count > 0){
+            orderSettingDao.update(orderSetting);
+        }else {
+            orderSettingDao.add(orderSetting);
+        }
     }
 }

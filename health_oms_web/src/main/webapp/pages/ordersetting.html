@@ -152,6 +152,18 @@
                         number:value
                     };
                     console.log(formDatas);
+
+                    axios.post(this.backend_url+"/ordersetting/editNumberByDate.do",formDatas).then((response)=>{
+                        if (response.data.flag){
+                            this.initData(this.formatDate(day.getFullYear(),day.getMonth()+1,1));
+                            this.$message({
+                                message:response.data.message,
+                                type: "success"
+                            });
+                        }else{
+                            this.$message.error(response.data.message);
+                        }
+                    });
                 })
             },
             beforeUpload(file){
