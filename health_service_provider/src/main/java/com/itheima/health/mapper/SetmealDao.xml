@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.itheima.health.dao.SetmealDao">
+    <resultMap id="baseResultMap" type="Setmeal">
+        <id column="setmeal_id" property="id"/>
+        <result column="setmeal_name" property="name"/>
+    </resultMap>
+    <resultMap id="resultMap" type="Setmeal" extends="baseResultMap">
+        <collection property="checkGroups"
+                    javaType="ArrayList"
+                    ofType="CheckGroup"
+                    column="setmealId=setmeal_id"
+                    select="com.itheima.health.dao.CheckGroupDao.findCheckGroupBySetmealId"/>
+    </resultMap>
+    
+    
     <insert id="add">
-        /*INSERT t_setmeal(name,code,helpCode,sex,age,price,remark,attention,img)
-        VALUES (#{name}, #{code}, #{helpCode},#{sex},#{age},#{price},#{remark},#{attention},#{img})*/
+        INSERT t_setmeal(name,code,helpCode,sex,age,price,remark,attention,img)
+        VALUES (#{name}, #{code}, #{helpCode},#{sex},#{age},#{price},#{remark},#{attention},#{img})
 
-        INSERT t_setmeal
-        VALUES (null, #{name}, #{code}, #{helpCode},#{sex},#{age},#{price}, #{remark}, #{attention}, #{img})
+       <!--INSERT t_setmeal
+        VALUES (null, #{name}, #{code}, #{helpCode},#{sex},#{age},#{price}, #{remark}, #{attention}, #{img})-->
         <selectKey resultType="integer" order="AFTER" keyProperty="id">
             Select LAST_INSERT_ID()
         </selectKey>
@@ -23,5 +36,13 @@
         <if test=" queryString!=null and queryString.length > 0">
             WHERE code LIKE CONCAT('%',#{queryString},'%') or name LIKE CONCAT('%',#{queryString},'%') or helpCode like CONCAT('%',#{queryString},'%')
         </if>
+    </select>
+    <select id="findAll" resultType="com.itheima.health.pojo.Setmeal">
+        SELECT * FROM t_setmeal
+    </select>
+
+    <select id="findById" resultMap="resultMap">
+        SELECT id setmeal_id,name setmeal_name, code, helpCode, sex, age, price, remark, attention, img FROM t_setmeal
+        WHERE id = #{id}
     </select>
 </mapper>

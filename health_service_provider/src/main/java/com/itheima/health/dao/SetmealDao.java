@@ -4,7 +4,9 @@ import com.github.pagehelper.Page;
 import com.itheima.health.pojo.Setmeal;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public interface SetmealDao {
     void add(Setmeal setmeal);
@@ -13,4 +15,7 @@ public interface SetmealDao {
 
     Page<Setmeal> selectByCondition(@Param("queryString") String queryString);
 
+    List<Setmeal> findAll();
+
+    Setmeal findById(@Param("id") Integer id);
 }

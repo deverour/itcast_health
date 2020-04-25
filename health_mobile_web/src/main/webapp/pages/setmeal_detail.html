@@ -92,6 +92,12 @@
             }
         },
         mounted(){
+            axios.get(this.mobile_backend_url+"/setmeal/findById.do?id="+id).then((response)=>{
+               if (response.data.flag){
+                   this.setmeal = response.data.data;
+                   this.imgUrl="http://q9480zr3a.bkt.clouddn.com/"+response.data.data.img;
+               }
+            });
 
         }
     });

@@ -4,6 +4,8 @@ import com.itheima.health.entity.PageResult;
 import com.itheima.health.entity.QueryPageBean;
 import com.itheima.health.pojo.Setmeal;
 
+import java.util.List;
+
 /**
  * @author ：seanyang
  * @date ：Created in 2019/7/18
@@ -19,6 +21,10 @@ public interface SetmealService {
     void add(Setmeal setmeal,Integer[] checkGroupIds);
 
     PageResult pageQuery(Integer currentPage,Integer pageSize,String queryString);
+
+    List<Setmeal> findAll();
+
+    Setmeal findById(Integer id);
 
 
 }
