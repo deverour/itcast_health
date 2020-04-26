@@ -12,12 +12,25 @@
         WHERE orderDate=#{orderDate}
 
     </update>
+    <update id="editReservationByOrderDate" parameterType="OrderSetting">
+        UPDATE t_ordersetting
+        set reservations = #{reservations}
+        WHERE orderDate = #{orderDate}
+
+    </update>
+
 
     <select id="countByOrderDate" resultType="java.lang.Long" parameterType="date">
         SELECT count(*) FROM t_ordersetting  WHERE orderDate = #{date}
 
     </select>
+
     <select id="getOrderSettingByMonth" resultType="com.itheima.health.pojo.OrderSetting">
         SELECT * FROM t_ordersetting WHERE orderDate BETWEEN #{beginDate} AND #{endDate}
+    </select>
+
+    <select id="findByOrderDate" resultType="com.itheima.health.pojo.OrderSetting">
+        SELECT * FROM t_ordersetting
+        WHERE orderDate = #{orderDate}
     </select>
 </mapper>
