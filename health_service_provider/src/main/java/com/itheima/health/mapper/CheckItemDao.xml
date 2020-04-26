@@ -36,4 +36,9 @@
     <select id="findAll" resultType="com.itheima.health.pojo.CheckItem">
         SELECT * FROM t_checkitem
     </select>
+
+
+    <select id="findCheckItemByCheckGroup" resultType="CheckItem">
+        SELECT * from t_checkitem WHERE id in (SELECT checkitem_id from t_checkgroup_checkitem where checkgroup_id = #{checkGroupId})
+    </select>
 </mapper>
