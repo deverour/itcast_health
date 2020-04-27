@@ -33,47 +33,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5376521-13fc-4f78-aad3-c72858d94216" name="Default Changelist" comment="v6.5">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/health_security_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/health_security_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_interface/src/main/java/com/itheima/health/service/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_mobile_backend/src/main/java/com/itheima/health/mobile/controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_mobile_backend/src/main/java/com/itheima/health/mobile/utils/ValidateCodeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/health_security.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/resources/spring-mvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/resources/spring-security.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/auth-fail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/css/orderset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/js/axios-0.18.0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/js/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/login-fail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/main.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/pages/checkgroup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/pages/checkitem.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/plugins/elementui/fonts/element-icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/plugins/elementui/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/plugins/elementui/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/plugins/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/plugins/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_security/src/main/webapp/welcome.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health_service_provider/src/main/java/com/itheima/health/service/impl/MemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_security/src/main/java/com/itheima/health/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_security/src/main/java/com/itheima/health/security/SecurityUserDetailsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_dubbo_2_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_dubbo_2_6_2.xml" afterDir="false" />
@@ -112,6 +73,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_5_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_5_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_5_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_5_RELEASE.xml" afterDir="false" />
@@ -124,12 +88,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_5_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health_mobile_backend/src/main/java/com/itheima/health/mobile/controller/ValidateCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/health_mobile_backend/src/main/java/com/itheima/health/mobile/controller/ValidateCodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health_mobile_web/src/main/webapp/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/health_mobile_web/src/main/webapp/pages/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_common/src/main/java/com/itheima/health/pojo/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/health_common/src/main/java/com/itheima/health/pojo/Permission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_common/src/main/java/com/itheima/health/pojo/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/health_common/src/main/java/com/itheima/health/pojo/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_security/health_security.iml" beforeDir="false" afterPath="$PROJECT_DIR$/health_security/health_security.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_security/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/health_security/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_security/src/main/resources/spring-security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/health_security/src/main/resources/spring-security.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_security/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/health_security/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_security/src/main/webapp/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/health_security/src/main/webapp/main.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,9 +108,9 @@
         <option value="FxmlFile" />
         <option value="Mybatis Mapper" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="spring-beans.schema" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -180,7 +146,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587109731976" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/health_security/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/health_security/src/main/java/com/itheima/health/security" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -192,15 +158,15 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Develop\Workspace\IntelliJ_Space\itcast_health\health_security\src\main\java\com\itheima\health\security" />
       <recent name="D:\Develop\Workspace\IntelliJ_Space\itcast_health\health_security\src\main\webapp" />
       <recent name="D:\Develop\Workspace\IntelliJ_Space\itcast_health\health_security\src\main\resources" />
       <recent name="D:\Develop\Workspace\IntelliJ_Space\itcast_health\health_mobile_web\src\main\webapp\plugins\vue" />
       <recent name="D:\Develop\Workspace\IntelliJ_Space\itcast_health\health_mobile_backend\src\main\java\com\itheima\health\mobile\utils" />
-      <recent name="D:\Develop\Workspace\IntelliJ_Space\itcast_health\health_common\src\main\java\com\itheima\health\utils" />
     </key>
   </component>
   <component name="RunManager" selected="Maven.health_security -6080[tomcat7:run]">
@@ -534,6 +500,9 @@
       <workItem from="1587950459828" duration="5707000" />
       <workItem from="1587962720288" duration="91000" />
       <workItem from="1587963945933" duration="6437000" />
+      <workItem from="1587982337375" duration="607000" />
+      <workItem from="1587983295684" duration="173000" />
+      <workItem from="1587985815929" duration="10783000" />
     </task>
     <task id="LOCAL-00001" summary="v0.1">
       <created>1587150112726</created>
@@ -610,22 +579,23 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="428" y="85" key="#Custom_Plugin_Repositories/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1587213295160" />
-    <state x="121" y="0" key="#Project_Structure" timestamp="1587142929097">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state x="242" y="0" key="#Project_Structure" timestamp="1587998112609">
+      <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="121" y="0" key="#Project_Structure/0.0.1280.689@0.0.1280.689" timestamp="1587142929097" />
+    <state x="242" y="0" key="#Project_Structure/0.0.2560.1410@0.0.2560.1410" timestamp="1587998112609" />
     <state x="447" y="145" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587971367699">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="447" y="145" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1587971367698" />
     <state x="2212" y="113" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.0.1440.870@1920.0.1440.870" timestamp="1587202263069" />
     <state x="1237" y="481" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1587803149753" />
-    <state x="612" y="197" key="#com.intellij.ide.util.MemberChooser" timestamp="1587951398649">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="1020" y="333" key="#com.intellij.ide.util.MemberChooser" timestamp="1587996317172">
+      <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="612" y="197" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1587951398649" />
     <state x="765" y="248" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1587226008087" />
-    <state x="1020" y="333" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1410@0.0.2560.1410" timestamp="1587913923627" />
+    <state x="1020" y="333" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1410@0.0.2560.1410" timestamp="1587996317172" />
     <state x="487" y="52" key="CommitChangelistDialog2" timestamp="1587310903092">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
@@ -638,38 +608,38 @@
     <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1587142927310" />
     <state x="505" y="121" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1587971350073" />
     <state x="842" y="205" key="FileChooserDialogImpl/0.0.2560.1410@0.0.2560.1410" timestamp="1587802942763" />
-    <state width="1342" height="215" key="GridCell.Tab.0.bottom" timestamp="1587976416083">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1582" height="571" key="GridCell.Tab.0.bottom" timestamp="1588000413372">
+      <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state width="1237" height="166" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1587143564638" />
     <state width="1342" height="215" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1587976416083" />
     <state width="1493" height="272" key="GridCell.Tab.0.bottom/0.0.1536.840@0.0.1536.840" timestamp="1587136076984" />
     <state width="1877" height="202" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1587227137373" />
-    <state width="1415" height="291" key="GridCell.Tab.0.bottom/0.0.2560.1410@0.0.2560.1410" timestamp="1587918858709" />
-    <state width="1342" height="215" key="GridCell.Tab.0.center" timestamp="1587976416082">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1582" height="571" key="GridCell.Tab.0.bottom/0.0.2560.1410@0.0.2560.1410" timestamp="1588000413372" />
+    <state width="1582" height="571" key="GridCell.Tab.0.center" timestamp="1588000413372">
+      <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state width="1237" height="166" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1587143564638" />
     <state width="1342" height="215" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1587976416082" />
     <state width="1493" height="272" key="GridCell.Tab.0.center/0.0.1536.840@0.0.1536.840" timestamp="1587136076983" />
     <state width="1877" height="202" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1587227137372" />
-    <state width="1415" height="291" key="GridCell.Tab.0.center/0.0.2560.1410@0.0.2560.1410" timestamp="1587918858709" />
-    <state width="1342" height="215" key="GridCell.Tab.0.left" timestamp="1587976416082">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1582" height="571" key="GridCell.Tab.0.center/0.0.2560.1410@0.0.2560.1410" timestamp="1588000413372" />
+    <state width="1582" height="571" key="GridCell.Tab.0.left" timestamp="1588000413372">
+      <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state width="1237" height="166" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1587143564638" />
     <state width="1342" height="215" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1587976416082" />
     <state width="1493" height="272" key="GridCell.Tab.0.left/0.0.1536.840@0.0.1536.840" timestamp="1587136076983" />
     <state width="1877" height="202" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1587227137372" />
-    <state width="1415" height="291" key="GridCell.Tab.0.left/0.0.2560.1410@0.0.2560.1410" timestamp="1587918858709" />
-    <state width="1342" height="215" key="GridCell.Tab.0.right" timestamp="1587976416082">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="1582" height="571" key="GridCell.Tab.0.left/0.0.2560.1410@0.0.2560.1410" timestamp="1588000413372" />
+    <state width="1582" height="571" key="GridCell.Tab.0.right" timestamp="1588000413372">
+      <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state width="1237" height="166" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1587143564638" />
     <state width="1342" height="215" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1587976416082" />
     <state width="1493" height="272" key="GridCell.Tab.0.right/0.0.1536.840@0.0.1536.840" timestamp="1587136076984" />
     <state width="1877" height="202" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1587227137373" />
-    <state width="1415" height="291" key="GridCell.Tab.0.right/0.0.2560.1410@0.0.2560.1410" timestamp="1587918858709" />
+    <state width="1582" height="571" key="GridCell.Tab.0.right/0.0.2560.1410@0.0.2560.1410" timestamp="1588000413372" />
     <state width="1342" height="247" key="GridCell.Tab.1.bottom" timestamp="1587971395070">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -695,15 +665,15 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="1440" y="488" key="NewModule_or_Project.wizard/0.0.2560.1410@0.0.2560.1410" timestamp="1587794403600" />
-    <state x="271" y="55" key="SettingsEditor" timestamp="1587950489475">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="1280" y="359" key="SettingsEditor" timestamp="1587998023649">
+      <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="226" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1587143245676" />
     <state x="271" y="55" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1587950489475" />
     <state x="271" y="55" key="SettingsEditor/0.0.1536.840@0.0.1536.840" timestamp="1587134897439" />
     <state x="339" y="69" key="SettingsEditor/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1587221917717" />
     <state x="2174" y="57" key="SettingsEditor/0.0.1920.1050/1920.0.1440.870@1920.0.1440.870" timestamp="1587203599259" />
-    <state x="1280" y="359" key="SettingsEditor/0.0.2560.1410@0.0.2560.1410" timestamp="1587903264338" />
+    <state x="1280" y="359" key="SettingsEditor/0.0.2560.1410@0.0.2560.1410" timestamp="1587998023649" />
     <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1587545324083">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -717,9 +687,10 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="1120" y="461" key="refactoring.ChangeSignatureDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1587897390224" />
-    <state x="407" y="100" key="spring file set editor" timestamp="1587971108115">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="678" y="169" key="spring file set editor" timestamp="1587998110926">
+      <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="407" y="100" key="spring file set editor/0.0.1536.834@0.0.1536.834" timestamp="1587971108114" />
+    <state x="678" y="169" key="spring file set editor/0.0.2560.1410@0.0.2560.1410" timestamp="1587998110926" />
   </component>
 </project>

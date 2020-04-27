@@ -17,6 +17,14 @@ public class Role implements Serializable {
     private Set<Permission> permissions = new HashSet<Permission>(0);
     private LinkedHashSet<Menu> menus = new LinkedHashSet<Menu>(0);
 
+    public Role() {
+    }
+
+    public Role(String name, String keyword) {
+        this.name = name;
+        this.keyword = keyword;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -72,4 +80,6 @@ public class Role implements Serializable {
     public void setMenus(LinkedHashSet<Menu> menus) {
         this.menus = menus;
     }
+
+
 }
