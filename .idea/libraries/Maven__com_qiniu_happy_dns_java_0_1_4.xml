@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Maven: com.qiniu:happy-dns-java:0.1.4">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../maven/repository/com/qiniu/happy-dns-java/0.1.4/happy-dns-java-0.1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Maven/repository/com/qiniu/happy-dns-java/0.1.4/happy-dns-java-0.1.4.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../../maven/repository/com/qiniu/happy-dns-java/0.1.4/happy-dns-java-0.1.4-javadoc.jar!/" />
