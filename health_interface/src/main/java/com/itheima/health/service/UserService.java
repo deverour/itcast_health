@@ -1,5 +1,7 @@
 package com.itheima.health.service;
 
+import com.itheima.health.pojo.User;
+
 /**
  * @author ：seanyang
  * @date ：Created in 2019/7/13
@@ -14,4 +16,6 @@ public interface UserService {
 	 * @return
 	 */
 	boolean login(String username,String password);
+
+	User findByUserName(String username);
 }

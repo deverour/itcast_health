@@ -38,11 +38,9 @@ public class UserController {
 	@RequestMapping("/loginSuccess")
 	public Result loginSuccess(){
 		return new Result(true,MessageConst.LOGIN_SUCCESS);
-
 	}
 	@RequestMapping("/loginFail")
 	public Result loginFail(){
-		return new Result(true,"登录失败");
-
+		return new Result(false,"登录失败");
 	}
 }

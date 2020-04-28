@@ -48,7 +48,7 @@
 <script src="../js/axios-0.18.0.js"></script>
 <script src="../js/jquery-heima-0.0.1.js"></script>
 <script>
-  var vue = new Vue({
+  var vueObj = new Vue({
     el:'#app',
     data:{
       backend_url:"http://localhost:9002",
@@ -58,7 +58,7 @@
       login(){
         var username = $("#username").val();
         var password = $("#password").val();
-        console.log("user:"+username+"pass:"+password);
+        console.log("user111:"+username+"pass:"+password);
         var formParams = $("#loginForm").serialize();
         var params = {
           username:$("#username").val(),
@@ -82,10 +82,11 @@
         var params = $("#loginForm").serialize();
         HM.ajax("/sec/login.do",params,function(data){
           console.log(data);
+          // data ==> result(flag,message,data)
           if(data.flag){
             location.href="main.html";
           }else{
-            vue.$message.error(data.message);
+            vueObj.$message.error(data.message);
           }
         });
       }

@@ -1,8 +1,10 @@
 package com.itheima.health.security;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.itheima.health.pojo.Permission;
 import com.itheima.health.pojo.Role;
 import com.itheima.health.pojo.User;
+import com.itheima.health.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -25,6 +27,8 @@ import java.util.Map;
 public class SecurityUserDetailsService implements UserDetailsService {
 	// 模拟数据库的用户记录，如下User类是health_common中的自定义实体类User
 	// 修改Role、Permission，为其增加不带参、带参构造方法
+	@Reference
+	private UserService userService;
 	@Autowired
 	private BCryptPasswordEncoder passwordEncoder;
 	private static Map<String, User> userDb = new HashMap();
@@ -61,23 +65,25 @@ public class SecurityUserDetailsService implements UserDetailsService {
 
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		User user =userDb.get(username);
-		if (user==null){
+		//User user =userDb.get(username);
+		User currUser =userService.findByUserName(username);
+		if (currUser==null){
 			System.out.println("用户失败");
 			return null;
 		}
-		List<GrantedAuthority> authorityList = new ArrayList<>();
-		for (Role role:user.getRoles()){
-			authorityList.add(new SimpleGrantedAuthority(role.getKeyword()));
+		List<GrantedAuthority> grantedAuthorities = new ArrayList<>();
+		for (Role role:currUser.getRoles()){
+			grantedAuthorities.add(new SimpleGrantedAuthority(role.getKeyword()));
 			for (Permission permission:role.getPermissions()){
-				authorityList.add(new SimpleGrantedAuthority(permission.getKeyword()));
+				grantedAuthorities.add(new SimpleGrantedAuthority(permission.getKeyword()));
 			}
 		}
-		String authPassword1 = "{noop}"+user.getPassword();
-		System.out.println("ps1"+authPassword1);
-		String authPassword = passwordEncoder.encode(user.getPassword());
-		System.out.println("ps2"+authPassword);
-		UserDetails userDetails = new org.springframework.security.core.userdetails.User(username,authPassword,authorityList);
+		/*String authPassword1 = "{noop}"+user.getPassword();
+		System.out.println("ps1"+authPassword1);*/
+
+		//String authPassword = passwordEncoder.encode(user.getPassword());
+		System.out.println("ps2"+currUser.getPassword());
+		UserDetails userDetails = new org.springframework.security.core.userdetails.User(username,currUser.getPassword(),grantedAuthorities);
 		return userDetails;
 	}
 }
