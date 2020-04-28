@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Slf4j
 @RestController
-@RequestMapping("/web/user")
+@RequestMapping("/user")
 public class UserController {
 	@Reference
 	private UserService userService;
@@ -24,7 +24,7 @@ public class UserController {
 	@RequestMapping("/login")
 	public Result login(String username,String password){
 		System.out.println("9002.login");
-		log.debug("oms backend u:{},p:{}",username,password);
+		//log.debug("oms backend u:{},p:{}",username,password);
 		try{
 		    if(userService.login(username,password)){
 		    	return new Result(true, MessageConst.ACTION_SUCCESS,username);
@@ -33,5 +33,16 @@ public class UserController {
 		    e.printStackTrace();
 		}
 		return new Result(true, MessageConst.ACTION_FAIL);
+	}
+
+	@RequestMapping("/loginSuccess")
+	public Result loginSuccess(){
+		return new Result(true,MessageConst.LOGIN_SUCCESS);
+
+	}
+	@RequestMapping("/loginFail")
+	public Result loginFail(){
+		return new Result(true,"登录失败");
+
 	}
 }

@@ -22,7 +22,7 @@ import java.util.Map;
  * @description ：
  * @version: 1.0
  */
-public class SecurityUserDetailsService  implements UserDetailsService {
+public class SecurityUserDetailsService implements UserDetailsService {
 	// 模拟数据库的用户记录，如下User类是health_common中的自定义实体类User
 	// 修改Role、Permission，为其增加不带参、带参构造方法
 	@Autowired
